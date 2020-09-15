@@ -22,6 +22,7 @@
 		FE2F4AA82510670A00DC055B /* LoanedItems.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE2F4AA62510670A00DC055B /* LoanedItems.xcdatamodeld */; };
 		FE2F4AAB25107DC600DC055B /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2F4AA925107DC600DC055B /* Item+CoreDataClass.swift */; };
 		FE2F4AAC25107DC600DC055B /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2F4AAA25107DC600DC055B /* Item+CoreDataProperties.swift */; };
+		FE2F4AAE251082B600DC055B /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2F4AAD251082B600DC055B /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FE2F4AA72510670A00DC055B /* LoanedItems.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoanedItems.xcdatamodel; sourceTree = "<group>"; };
 		FE2F4AA925107DC600DC055B /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FE2F4AAA25107DC600DC055B /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FE2F4AAD251082B600DC055B /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				FE2F4AA925107DC600DC055B /* Item+CoreDataClass.swift */,
 				FE2F4AAA25107DC600DC055B /* Item+CoreDataProperties.swift */,
 				FE2F4AA62510670A00DC055B /* LoanedItems.xcdatamodeld */,
+				FE2F4AAD251082B600DC055B /* ItemStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				FE2F4AAC25107DC600DC055B /* Item+CoreDataProperties.swift in Sources */,
 				E9D24DEF212789B90045C5D8 /* UIImage+ImagePickerController.swift in Sources */,
 				FE2F4AA82510670A00DC055B /* LoanedItems.xcdatamodeld in Sources */,
+				FE2F4AAE251082B600DC055B /* ItemStore.swift in Sources */,
 				E929E9692124EB7E0018488C /* AppDelegate.swift in Sources */,
 				E969554E21277C3100457E12 /* ItemEditorViewController.swift in Sources */,
 				448856882239D544001EDDC4 /* Loanee.swift in Sources */,
