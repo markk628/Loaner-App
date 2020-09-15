@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Loanee: NSObject, NSCoding {
+public class Loanee: NSObject, NSCoding {
 
     var name: String
     var contactNumber: String?
@@ -32,13 +32,13 @@ class Loanee: NSObject, NSCoding {
     }
     
     // NSCoding requires encoding func
-    func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(name, forKey: "name")
         coder.encode(contactNumber, forKey: "contactNumber")
     }
     
     // NSCoding requires decoing func
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         name = aDecoder.decodeObject(forKey: "name") as! String
         contactNumber = aDecoder.decodeObject(forKey: "contactNumber") as? String
         super.init()
