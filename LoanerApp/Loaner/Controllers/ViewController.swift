@@ -16,13 +16,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        
-        // Save the new items
-        store.saveContext()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +27,29 @@ class ViewController: UIViewController {
         flow.itemSize = CGSize(width: screenSize.width / 2 - horizontalPadding * 2, height: screenSize.width / 2 - verticalPadding * 2)
         flow.sectionInset = UIEdgeInsets(top: verticalPadding, left: horizontalPadding, bottom: verticalPadding, right: horizontalPadding)
         collectionView.collectionViewLayout = flow
+        updateDataSource()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        // Save the new items
+        store.saveContext()
+        updateDataSource()
+    }
+    
+    // Populate an array with fetched results on success, or to delete all items from that array on failure
+    private func updateDataSource() {
+        self.store.fetchPersistentData { (fetchItemsResult) in
+            switch fetchItemsResult {
+            case let .success(items):
+                self.items = items
+            case .failure(_):
+                self.items.removeAll()
+            }
+            // Reload the collection view's data source to present the current data seet to the user
+            self.collectionView.reloadSections(IndexSet(integer: 0))
+        }
     }
     
     func createNewItem() -> Item {

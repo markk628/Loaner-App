@@ -84,8 +84,8 @@
 				448856872239D544001EDDC4 /* Loanee.swift */,
 				FE2F4AA925107DC600DC055B /* Item+CoreDataClass.swift */,
 				FE2F4AAA25107DC600DC055B /* Item+CoreDataProperties.swift */,
-				FE2F4AA62510670A00DC055B /* LoanedItems.xcdatamodeld */,
 				FE2F4AAD251082B600DC055B /* ItemStore.swift */,
+				FE2F4AA62510670A00DC055B /* LoanedItems.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";

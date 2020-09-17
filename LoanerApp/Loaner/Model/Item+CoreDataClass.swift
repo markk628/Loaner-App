@@ -19,7 +19,7 @@ public class Item: NSManagedObject {
         
         itemTitle = "Untitled"
         notes = ""
-        itemImage = UIImage(named: "no image")!
+        itemImage = UIImage(named: "no item image")!
         loanee = Loanee(name: "", contactNumber: "")
     }
 
